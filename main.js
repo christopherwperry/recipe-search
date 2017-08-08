@@ -22,9 +22,9 @@ button.addEventListener("click", function(){
           let new_box = document.createElement("div");
           new_box.setAttribute("class", "box");
           let template = `
-          <img src="${thumbnail}">
+          <img src="${thumbnail}" alt=""http://via.placeholder.com/150x150"">
           <p>Title: ${title}</p>
-          <p>Link: ${link}</p>
+          <p>Link: <a href="${link}">Recipe</a></p>
           `
           new_box.innerHTML = template
           let box = document.querySelector(".content-boxes");

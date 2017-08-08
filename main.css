@@ -38,9 +38,13 @@ hr {
 }
 
 .box {
+  text-align: center;
   border: solid 1px;
-  width: 20vw;
-  height: 20vw;
+  width: 30vw;
   margin: 1vw;
   margin-bottom: 20px;
+}
+
+img {
+
 }
