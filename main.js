@@ -1,4 +1,3 @@
-
 fetch('https://www.recipepuppy.com/api/')
   .then(function(response) {
       if (response.status !== 200) {
@@ -9,7 +8,6 @@ fetch('https://www.recipepuppy.com/api/')
 
     });
 
-
     /*
 
 
@@ -17,3 +15,5 @@ fetch('https://www.recipepuppy.com/api/')
 
 
     */// variable for search term and concat to end of url
+
+    //for each item we need a thumbnail, title, and link to href

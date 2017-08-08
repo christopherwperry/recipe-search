@@ -1,6 +1,6 @@
 header {
   background-color: #D6D6D6;
-  padding: 5px;
+  display:flex;
 }
 
 hr {
@@ -8,8 +8,16 @@ hr {
 }
 
 .circle {
+  margin: 3px;
 }
 
+#urlbar {
+  width: 530px;
+  height: 20px;
+  border-radius: 5%;
+  background-color: #FFFFFF;
+  margin: 5px;
+}
 .all-content {
   margin-left: 100px;
   margin-right: 100px;
