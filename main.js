@@ -1,7 +1,7 @@
 let button = document.getElementById("searchButton");
 console.log(button);
 
-let proxy = 'http://recipepuppyproxy.herokuapp.com/api/?i=';
+let proxy = 'http://recipepuppyproxy.herokuapp.com/api/?q=';
 
 button.addEventListener("click", function(){
   let search_term = document.getElementById("top_box").value;
@@ -15,7 +15,7 @@ button.addEventListener("click", function(){
           return;
         }
       response.json().then(function(data) {
-        console.log(data.results[1].thumbnail)
+        document.querySelector(".content-boxes").innerHTML = "";
         for(let i = 0; i < data.results.length; i++){
           let thumbnail = data.results[i].thumbnail;
           let title = data.results[i].title;
@@ -30,8 +30,8 @@ button.addEventListener("click", function(){
           <p><a href="${link}">Recipe</a></p>
           `
           new_box.innerHTML = template
-          let box = document.querySelector(".content-boxes");
-          box.appendChild(new_box);
+          let big_box = document.querySelector(".content-boxes");
+          big_box.appendChild(new_box);
         }
       });
     })
