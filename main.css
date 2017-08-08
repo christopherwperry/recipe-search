@@ -1,50 +1,65 @@
-header {
-  background-color: #D6D6D6;
-  display:flex;
+body {
+  /*   http://lea.verou.me/css3patterns/#carbon-fibre  */
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 16px;
 }
 
-hr {
+h1 {
+  font-size: 40px;
+  color: #FFFFFF;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.circle {
-  margin: 3px;
-}
-
-#urlbar {
-  width: 530px;
-  height: 20px;
-  border-radius: 5%;
-  background-color: #FFFFFF;
-  margin: 5px;
-}
 .all-content {
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 75px;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-family: 'Roboto', sans-serif;
 }
 
 #top_box {
   margin-bottom: 25px;
   height: 30px;
-  width: 200px;
+  width: 50vw;
+  font-size: 16px;
 }
 
 .content-boxes {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .box {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/absurdity.png");
   text-align: center;
   border: solid 1px;
-  width: 30vw;
+  width: 20vw;
+  padding-top: 10px;
   margin: 1vw;
   margin-bottom: 20px;
 }
 
-img {
-
+button {
+  background:
+  radial-gradient(black 15%, transparent 16%) 0 0,
+  radial-gradient(black 15%, transparent 16%) 8px 8px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+  radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  background-color:#282828;
+  background-size:16px 16px;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  padding: 10px;
+  font-size: 16px;
 }
