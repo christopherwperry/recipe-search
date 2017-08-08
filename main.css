@@ -39,7 +39,8 @@ hr {
 
 .box {
   border: solid 1px;
-  width: 150px;
-  height: 150px;
+  width: 20vw;
+  height: 20vw;
+  margin: 1vw;
   margin-bottom: 20px;
 }
